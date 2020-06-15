@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+
+<pages>
+
+    <package id="com.hilti.tahilti.pages.WebshopPages">
+         <page>
+            <name>Webshop Main Page</name>
+            <class>WebshopMainPage</class>
+        </page>
+        <page>
+            <name>Webshop Registration Page</name>
+            <class>WebshopRegistrationPage</class>
+        </page>
+        <page>
+            <name>Webshop Error Page</name>
+            <class>WebshopErrorPage</class>
+        </page>
+       	<page>
+       		<name>My Favorite Lists Page</name>
+       		<class>MyFavoriteListsPage</class>
+       	</page>
+       	<page>
+       		<name>My Company Lists Page</name>
+       		<class>MyCompanyListsPage</class>
+       	</page>
+       	<page>
+       		<name>Order History Page</name>
+       		<class>OrderHistoryPage</class>
+       	</page>
+       	<page>
+       		<name>Order Details Page</name>
+       		<class>OrderDetailsPage</class>
+       	</page>
+       	<page>
+       		<name>Cart Page</name>
+       		<class>CartPage</class>
+       	</page>
+       	<page>
+       		<name>Grid Page</name>
+       		<class>GridPage</class>
+       	</page>
+       	<page>
+       		<name>Checkout Delivery Page</name>
+       		<class>CheckoutDeliveryPage</class>
+       	</page>
+       	<page>
+       		<name>Checkout Billing Page</name>
+       		<class>CheckoutBillingPage</class>
+       	</page>
+       	<page>
+       		<name>Checkout Fleet Labelling Page</name>
+       		<class>CheckoutFleetLabellingPage</class>
+       	</page>
+       	<page>
+       		<name>Checkout Order Summary Page</name>
+       		<class>CheckoutOrderSummaryPage</class>
+       	</page>
+       	<page>
+       		<name>Checkout Pickup Details Page</name>
+       		<class>CheckoutPickupDetailsPage</class>
+       	</page>
+       	<page>
+       		<name>Checkout Pickup Location Page</name>
+       		<class>CheckoutPickupLocationPage</class>
+       	</page>
+       	<page>
+       		<name>Find Hilti Center Page</name>
+       		<class>FindHiltiCenterPage</class>
+       	</page>
+       	<page>
+       		<name>Profile Page</name>
+       		<class>ProfilePage</class>
+       	</page>
+       	<page>
+       		<name>Hilti Center Details Page</name>
+       		<class>HiltiCenterDetailsPage</class>
+       	</page>
+       	<page>
+       		<name>Checkout Summary Print Page</name>
+       		<class>CheckoutSummaryPrintPage</class>
+       	</page>
+       	<page>
+       		<name>Checkout Order Confirmation Page</name>
+       		<class>CheckoutOrderConfirmationPage</class>
+       	</page>
+       	<page>
+       		<name>My Favorite Lists Details Page</name>
+       		<class>MyFavoriteListsDetailsPage</class>
+       	</page>
+       	<page>
+       		<name>Range Page</name>
+       		<class>RangePage</class>
+       	</page>
+       	<page>
+       		<name>Search Results Page</name>
+       		<class>SearchResultsPage</class>
+       	</page>
+       	<page>
+       		<name>My Company Lists Details Page</name>
+       		<class>MyCompanyListsDetailsPage</class>
+       	</page>
+		<page>
+       		<name>Item Page</name>
+       		<class>ItemPage</class>
+       	</page>
+       	<page>
+       		<name>My Submittals Page</name>
+       		<class>MySubmittalsPage</class>
+       	</page>
+       	<page>
+       		<name>Firestops Page</name>
+       		<class>FirestopsPage</class>
+       	</page>
+       	<page>
+       		<name>Firestops Builder Page</name>
+       		<class>FirestopsBuilderPage</class>
+       	</page>
+       	<page>
+       		<name>Editorial Page</name>
+       		<class>EditorialPage</class>
+       	</page>
+       	<page>
+       		<name>Tool Management Page</name>
+       		<class>ToolManagementPage</class>
+       	</page>
+    </package>
+
+</pages>

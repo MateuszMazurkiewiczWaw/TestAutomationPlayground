@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d [%t] %-5level %msg%n" />
+        </Console>
+        <!--<File name="STATUS" fileName="target/status.log">-->
+        <!--<PatternLayout pattern="%d;%msg%n" />-->
+        <!--</File>-->
+    </Appenders>
+    <Loggers>
+        <Root level="error">
+            <AppenderRef ref="Console" />
+        </Root>
+        <Logger name="Console" level="info">
+            <!--<AppenderRef ref="Console" />-->
+        </Logger>
+
+        <!--<Logger name="STATUS" level="info">-->
+        <!--<AppenderRef ref="STATUS" />-->
+        <!--</Logger>-->
+    </Loggers>
+</Configuration>
