@@ -18,8 +18,8 @@ Feature: HOL-20048 Register: Step 1+2 - Registration Form and Confirmation E-Mai
 	    And Webshop Registration Page: Section REGISTRATION_FORM contains text registration.label.form.repeatPassword
 	    And Webshop Registration Page: In section REGISTRATION_FORM element REGISTER_NOW_BUTTON is enabled
 	    Then Webshop Registration Page: In section REGISTRATION_FORM in field EMAIL_ADDRESS_TEXTFIELD type and remember RANDOM_EMAIL_ADDRESS as EMAIL
-	    And Webshop Registration Page: In section REGISTRATION_FORM in field ENTER_PASSWORD_TEXTFIELD type in Hilti2016!
-	    And Webshop Registration Page: In section REGISTRATION_FORM in field REPEAT_PASSWORD_TEXTFIELD type in Hilti2016!
+	    And Webshop Registration Page: In section REGISTRATION_FORM in field ENTER_PASSWORD_TEXTFIELD type in hybris2016!
+	    And Webshop Registration Page: In section REGISTRATION_FORM in field REPEAT_PASSWORD_TEXTFIELD type in hybris2016!
 	    Then Webshop Registration Page: In section REGISTRATION_FORM check TERMS_OF_CONDITION_CHECKBOX
 	    When Webshop Registration Page: In section REGISTRATION_FORM element REGISTER_NOW_BUTTON is enabled
 	    And Webshop Registration Page: In section REGISTRATION_FORM click REGISTER_NOW_BUTTON
@@ -67,13 +67,13 @@ Feature: HOL-20048 Register: Step 1+2 - Registration Form and Confirmation E-Mai
 	    And Webshop Registration Page: In section REGISTRATION_FORM in field ENTER_PASSWORD_TEXTFIELD type in Hi
 	    Then Webshop Registration Page: In section REGISTRATION_FORM 3 of PASSWORD_SECURITY_REQUIREMENTS are valid	 
 	    
-	    And Webshop Registration Page: In section REGISTRATION_FORM in field ENTER_PASSWORD_TEXTFIELD type in Hilti2
+	    And Webshop Registration Page: In section REGISTRATION_FORM in field ENTER_PASSWORD_TEXTFIELD type in hybris2
 	    Then Webshop Registration Page: In section REGISTRATION_FORM 4 of PASSWORD_SECURITY_REQUIREMENTS are valid
 	    
-	    When Webshop Registration Page: In section REGISTRATION_FORM in field ENTER_PASSWORD_TEXTFIELD type in Hilti2016!
+	    When Webshop Registration Page: In section REGISTRATION_FORM in field ENTER_PASSWORD_TEXTFIELD type in hybris2016!
 	    Then Webshop Registration Page: In section REGISTRATION_FORM all PASSWORD_SECURITY_REQUIREMENTS are valid
 	    
-	    And Webshop Registration Page: In section REGISTRATION_FORM in field REPEAT_PASSWORD_TEXTFIELD type in Hilti2016!	    
+	    And Webshop Registration Page: In section REGISTRATION_FORM in field REPEAT_PASSWORD_TEXTFIELD type in hybris2016!
 	    
 	   	When Webshop Registration Page: In section REGISTRATION_FORM click SHOW_PASSWORDS_CHECKBOX
 	    Then Webshop Registration Page: In section REGISTRATION_FORM in field ENTER_PASSWORD_TEXTFIELD text is visible

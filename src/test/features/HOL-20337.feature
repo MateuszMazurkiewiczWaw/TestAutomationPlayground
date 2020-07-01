@@ -76,7 +76,7 @@ Feature: HOL-20337 Availability check
 		And General: Wait 2 seconds
 	 	And Cart Page: In section ADD_TO_CART_OVERLAY_WIDGET element AVAILABILITY_NOTIFICATION contains text availabilityCheck.message.partial.availabilityCheck
 	 	
-	 	#Check availability overlay - pick up from hilti center widget testing
+	 	#Check availability overlay - pick up from hybris center widget testing
 	 	When Cart Page: In section PICK_UP_FROM_HC_OVERLAY_WIDGET in field CHECK_AVAILABILITY_OVERLAY_CITY_TEXTFIELD type in <hc_city>
 	 	And General: Wait 2 seconds
 	 	When Cart Page: Remember value of CHECK_AVAILABILITY_OVERLAY_CITY_TEXTFIELD as CITY_NAME
@@ -87,7 +87,7 @@ Feature: HOL-20337 Availability check
 	 	And Cart Page: In section OVERLAY_HC_CITY_LIST element ADD_TO_CART_OVERLAY_BUTTON in position 1 is visible
 	 	And Cart Page: In section OVERLAY_HC_CITY_LIST element OVERLAY_GET_DIRECTIONS_LINK in position 1 is visible
 	 	And Cart Page: In section OVERLAY_HC_CITY_LIST element OVERLAY_OPENING_HOURS_BUTTON in position 1 is visible
-	 	And Cart Page: Scroll to OVERLAY_HILTI_CENTER_MAP
+	 	And Cart Page: Scroll to OVERLAY_hybris_CENTER_MAP
 	 	And Cart Page: In section OVERLAY_HC_CITY_LIST click element OVERLAY_OPENING_HOURS_BUTTON in position 1
 	 	And General: Wait 2 seconds
 	 	And Cart Page: Section OVERLAY_OPENING_HOURS_POPUP is visible

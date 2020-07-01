@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!--behaviour-driven-development-test-->
-    <name>ta-hilti-holng</name>
-    <groupId>com.hilti</groupId>
-    <artifactId>ta-hilti-holng</artifactId>
+    <name>ta-hybris-mati</name>
+    <groupId>com.hybris.mati</groupId>
+    <artifactId>ta-hybris-mati</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
     <url>http://maven.apache.org</url>

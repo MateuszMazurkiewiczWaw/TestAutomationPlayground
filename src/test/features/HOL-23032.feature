@@ -35,17 +35,17 @@ Feature: HOL-23032 Fleet item can be ordered with the Internal Ship-to process
 	 	And General: Wait 3 second
 	 	Then Checkout Delivery Page: Section DELIVERY_ADDRESS_FORM is visible
 	 	
-	 	And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM click SHIP_TO_A_HILTI_CENTER_RADIOBUTTON
+	 	And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM click SHIP_TO_A_hybris_CENTER_RADIOBUTTON
 		And Checkout Delivery Page: STORELOCATOR_POPUP is visible
 		And Checkout Delivery Page: Element STORELOCATOR_POPUP contains text storelocator.label.title
 		When Checkout Delivery Page: In section STORELOCATOR_POPUP click USE_MY_LOCATION_BUTTON
 		#First available
-		Then Checkout Delivery Page: In section STORELOCATOR_POPUP element HILTI_CENTER_NAME is visible
-		And Checkout Delivery Page: Remember value of HILTI_CENTER_NAME as HILTI_CENTER_NAME1
-		When Checkout Delivery Page: In section STORELOCATOR_POPUP click SELECT_HILTI_CENTER_BUTTON
+		Then Checkout Delivery Page: In section STORELOCATOR_POPUP element hybris_CENTER_NAME is visible
+		And Checkout Delivery Page: Remember value of hybris_CENTER_NAME as hybris_CENTER_NAME1
+		When Checkout Delivery Page: In section STORELOCATOR_POPUP click SELECT_hybris_CENTER_BUTTON
 		And General: Wait 2 seconds
 		Then Checkout Delivery Page: STORELOCATOR_POPUP is not visible
-		And Checkout Delivery Page: Section DELIVERY_ADDRESS_FORM contains remembered value HILTI_CENTER_NAME1	
+		And Checkout Delivery Page: Section DELIVERY_ADDRESS_FORM contains remembered value hybris_CENTER_NAME1
 	 
 	Examples:
       |	email_address			|	password			|	user_name		|	account_number	|	product_id			|	product_quantity	|

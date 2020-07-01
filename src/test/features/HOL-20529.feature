@@ -25,7 +25,7 @@ Feature: HOL-20529 Cart Empty
 	 	And Cart Page: In section BOTTOM_LOG_IN_REGISTER element SAVE_MONEY_SHIPPING_LINK is visible
 	 	And Cart Page: In section BOTTOM_LOG_IN_REGISTER element CHECK_STOCK_LINK is visible
 	 	And Cart Page: In section BOTTOM_LOG_IN_REGISTER element VIEW_YOUR_ACCOUNT_HISTORY_LINK is visible
-	 	And Cart Page: In section BOTTOM_LOG_IN_REGISTER element MANAGE_HILTI_TOOLS_LINK is visible
+	 	And Cart Page: In section BOTTOM_LOG_IN_REGISTER element MANAGE_hybris_TOOLS_LINK is visible
 	 	And Cart Page: In section BOTTOM_LOG_IN_REGISTER element QUICK_REORDER_LINK is visible
 	 	And Cart Page: In section BOTTOM_LOG_IN_REGISTER element REGISTER_HERE_LINK is visible
 	 	And Cart Page: Section LEARN_MORE is visible

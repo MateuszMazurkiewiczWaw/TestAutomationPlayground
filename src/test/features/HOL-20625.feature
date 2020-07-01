@@ -71,7 +71,7 @@ Feature: HOL-20625 Firestop Systems 2nd page - HNA/Canada only
 		When Firestops Builder Page: In section SELECTED_FIRESTOP_PRODUCTS all elements SELECTED_PRODUCT_CHECKBOX are checked
 		
 		#Selected submittals options section testing
-		When Firestops Builder Page: In section SELECTED_SUBMITTAL_OPTIONS element HILTI_COVER_PAGE_RADIOBUTTON is visible
+		When Firestops Builder Page: In section SELECTED_SUBMITTAL_OPTIONS element hybris_COVER_PAGE_RADIOBUTTON is visible
 		Then Firestops Builder Page: In section SELECTED_SUBMITTAL_OPTIONS click CUSTOM_COVER_PAGE_RADIOBUTTON
 		And General: Wait 2 seconds
 		And Firestops Builder Page: Section UPLOAD_CUSTOM_COVER is visible

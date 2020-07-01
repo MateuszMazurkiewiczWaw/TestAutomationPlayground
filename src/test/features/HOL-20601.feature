@@ -1,5 +1,5 @@
 @Sprint5
-Feature: HOL-20601 Standard Check out: Ship to Hilti Center
+Feature: HOL-20601 Standard Check out: Ship to hybris Center
 
   Scenario Outline: Testing the overlays, and delivery page elements regarding shipping to HC process
 		
@@ -44,36 +44,36 @@ Feature: HOL-20601 Standard Check out: Ship to Hilti Center
 	 	#Proceeding to the Checkout Delivery Page and testing the shipping to HC process
 	 	When Cart Page: In section SHOPPING_CART_HEADER click CHECK_OUT_BUTTON
 	 	Then General: Wait 2 second
-	 	And Checkout Delivery Page: Click SHIP_TO_A_HILTI_CENTER_RADIOBUTTON
+	 	And Checkout Delivery Page: Click SHIP_TO_A_hybris_CENTER_RADIOBUTTON
 	 	And Checkout Delivery Page: Section STORELOCATOR_POPUP is visible
-	 	And Checkout Delivery Page: In section STORELOCATOR_POPUP in field FIND_HILTI_CENTER_TEXTFIELD type in <hilti_center_location1>
-	 	And Checkout Delivery Page: In section STORELOCATOR_POPUP click SEARCH_HILTI_CENTER_BUTTON
-	 	And Checkout Delivery Page: Element HILTI_CENTER_NAME contains text <hilti_center_location1>
-	 	And Checkout Delivery Page: In section STORELOCATOR_POPUP click SELECT_HILTI_CENTER_BUTTON
+	 	And Checkout Delivery Page: In section STORELOCATOR_POPUP in field FIND_hybris_CENTER_TEXTFIELD type in <hybris_center_location1>
+	 	And Checkout Delivery Page: In section STORELOCATOR_POPUP click SEARCH_hybris_CENTER_BUTTON
+	 	And Checkout Delivery Page: Element hybris_CENTER_NAME contains text <hybris_center_location1>
+	 	And Checkout Delivery Page: In section STORELOCATOR_POPUP click SELECT_hybris_CENTER_BUTTON
 	 	Then General: Wait 1 second
 	 	And Checkout Delivery Page: Section STORELOCATOR_POPUP is not visible
 		And Checkout Delivery Page: Section REQUEST_SINGLE_SHIPMENT_CHECKBOX is visible
-		And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM element SELECTED_HILTI_STORE_ADDRESS is visible
-		And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM element SELECTED_HILTI_STORE_ADDRESS contains text <hilti_center_location1>
+		And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM element SELECTED_hybris_STORE_ADDRESS is visible
+		And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM element SELECTED_hybris_STORE_ADDRESS contains text <hybris_center_location1>
 		And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM element SHIPPING_METHOD contains text <shipping_method_notification>
 		
 		#Changing the HC
-		And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM click CHANGE_HILTI_CENTER_BUTTON
-		And Checkout Delivery Page: Section CHANGE_HILTI_CENTER_POPUP is visible
-		And Checkout Delivery Page: Section CHANGE_HILTI_CENTER_POPUP contains text <hilti_center_location1>
-		And Checkout Delivery Page: In section CHANGE_HILTI_CENTER_POPUP in field FIND_HILTI_CENTER_TEXTFIELD type in <hilti_center_city>
-	 	And Checkout Delivery Page: In section CHANGE_HILTI_CENTER_POPUP click SEARCH_HILTI_CENTER_BUTTON
-	 	And Checkout Delivery Page: Element HILTI_CENTER_NAME contains text <hilti_center_location1>
-	 	And Checkout Delivery Page: In section CHANGE_HILTI_CENTER_POPUP element CURRENTLY_SELECTED_HILTI_STORE_NOTIFICATION is visible
-	 	And Checkout Delivery Page: Element SECOND_HILTI_CENTER_NAME contains text <hilti_center_location2>
-	 	And Checkout Delivery Page: Click SECOND_HILTI_CENTER_NAME
-	 	And Checkout Delivery Page: In section CHANGE_HILTI_CENTER_POPUP click SELECT_HILTI_CENTER_BUTTON
+		And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM click CHANGE_hybris_CENTER_BUTTON
+		And Checkout Delivery Page: Section CHANGE_hybris_CENTER_POPUP is visible
+		And Checkout Delivery Page: Section CHANGE_hybris_CENTER_POPUP contains text <hybris_center_location1>
+		And Checkout Delivery Page: In section CHANGE_hybris_CENTER_POPUP in field FIND_hybris_CENTER_TEXTFIELD type in <hybris_center_city>
+	 	And Checkout Delivery Page: In section CHANGE_hybris_CENTER_POPUP click SEARCH_hybris_CENTER_BUTTON
+	 	And Checkout Delivery Page: Element hybris_CENTER_NAME contains text <hybris_center_location1>
+	 	And Checkout Delivery Page: In section CHANGE_hybris_CENTER_POPUP element CURRENTLY_SELECTED_hybris_STORE_NOTIFICATION is visible
+	 	And Checkout Delivery Page: Element SECOND_hybris_CENTER_NAME contains text <hybris_center_location2>
+	 	And Checkout Delivery Page: Click SECOND_hybris_CENTER_NAME
+	 	And Checkout Delivery Page: In section CHANGE_hybris_CENTER_POPUP click SELECT_hybris_CENTER_BUTTON
 	 	Then General: Wait 1 second
-	 	And Checkout Delivery Page: Section CHANGE_HILTI_CENTER_POPUP is not visible
-	 	And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM element SELECTED_HILTI_STORE_ADDRESS is visible
-		And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM element SELECTED_HILTI_STORE_ADDRESS contains text <hilti_center_location2>
+	 	And Checkout Delivery Page: Section CHANGE_hybris_CENTER_POPUP is not visible
+	 	And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM element SELECTED_hybris_STORE_ADDRESS is visible
+		And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM element SELECTED_hybris_STORE_ADDRESS contains text <hybris_center_location2>
 	 	And Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM element SHIPPING_METHOD contains text <shipping_method_notification>
 	 	
 	Examples:
-      |	email_address			|	password			|	user_name		|	account_number	|	item_number_valid		|	hilti_center_location1		|	hilti_center_location2			|	hilti_center_city	|	shipping_method_notification	|	summed_up_quantity	|
-      |	US_user_email			|	US_user_password	|	US_user_name	|	US_user_id		|	US_standard_product1	|	Hilti Center Chicago Loop	|	Hilti Center Chicago Oak Lawn	|	Chicago				|	Ship to Hilti Center			|	5					|
+      |	email_address			|	password			|	user_name		|	account_number	|	item_number_valid		|	hybris_center_location1		|	hybris_center_location2			|	hybris_center_city	|	shipping_method_notification	|	summed_up_quantity	|
+      |	US_user_email			|	US_user_password	|	US_user_name	|	US_user_id		|	US_standard_product1	|	hybris Center Chicago Loop	|	hybris Center Chicago Oak Lawn	|	Chicago				|	Ship to hybris Center			|	5					|

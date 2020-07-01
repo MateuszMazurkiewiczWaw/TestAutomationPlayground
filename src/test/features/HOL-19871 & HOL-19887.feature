@@ -41,8 +41,8 @@ Feature: HOL-19871 Chat layer & HOL-19887 Chat Windows - which slides in from th
 	    And General: Wait 10 seconds
 	    When Webshop Main Page: If test is executed between <Chat_Open_Hour> and <Chat_Close_Hour> section DO_YOU_NEED_HELP is visible otherwise it's not
 	    Then Webshop Main Page: If chat is open then in section DO_YOU_NEED_HELP click CHAT_NOW_BUTTON
-	    And Webshop Main Page: If chat is open then in section CONTACT_US in field YOUR_NAME_CHAT_TEXTFIELD type in Hilti Customer
-	    And Webshop Main Page: If chat is open then in section CONTACT_US in field YOUR_EMAIL_CHAT_TEXTFIELD type in Hilti.customer1@hilti.xyz
+	    And Webshop Main Page: If chat is open then in section CONTACT_US in field YOUR_NAME_CHAT_TEXTFIELD type in hybris Customer
+	    And Webshop Main Page: If chat is open then in section CONTACT_US in field YOUR_EMAIL_CHAT_TEXTFIELD type in hybris.customer1@hybris.xyz
 	    And Webshop Main Page: If chat is open then in section CONTACT_US in field YOUR_QUESTION_CHAT_TEXTFIELD type in Is it possible to pay with credit card?
 	    And General: If chat is open then there is 1 window open
 	    And Webshop Main Page: If chat is open then in section CONTACT_US click SUBMIT_CHAT_BUTTON

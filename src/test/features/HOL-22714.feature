@@ -48,7 +48,7 @@ Feature: HOL-22714 Check out - Pickup details
 	 	And Checkout Pickup Location Page: Click CONTINUE_BUTTON
 	 	Then Checkout Pickup Details Page: Section PICKUP_DETAILS_FORM is visible
 	 	And Checkout Pickup Details Page: In section PICKUP_DETAILS_FORM element EXPECTED_PICKUP_CONTACT_COLUMN is visible
-	 	And Checkout Pickup Details Page: In section PICKUP_DETAILS_FORM element HILTI_CENTER_COLUMN is visible
+	 	And Checkout Pickup Details Page: In section PICKUP_DETAILS_FORM element hybris_CENTER_COLUMN is visible
 	 	And Checkout Pickup Details Page: In section PICKUP_DETAILS_FORM element OPENING_HOURS_COLUMN is visible
 	 	And Checkout Pickup Details Page: In section PICKUP_DETAILS_FORM element LOCATION_MAP is visible
 	 	And Checkout Pickup Details Page: In section PICKUP_DETAILS_FORM element GET_DIRECTIONS_BUTTON is visible

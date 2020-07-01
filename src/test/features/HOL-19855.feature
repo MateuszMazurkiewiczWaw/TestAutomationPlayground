@@ -30,10 +30,10 @@ Feature: HOL-19855 Contact Us
 	  	And Webshop Main Page: In section CONTACT_US click CLOSE_CHAT_BUTTON
 	  	And General: Wait 1 second
 	  	
-	  	When Webshop Main Page: In section FOOTER_MIDDLE element FIND_A_HILTI_CENTER_LINK is visible
-	  	And Webshop Main Page: In section FOOTER_MIDDLE click FIND_A_HILTI_CENTER_LINK
-	  	Then Find Hilti Center Page: USE_MY_LOCATION_BUTTON is visible
-	  	And Webshop Main Page: Click HILTI_LOGO_BUTTON
+	  	When Webshop Main Page: In section FOOTER_MIDDLE element FIND_A_hybris_CENTER_LINK is visible
+	  	And Webshop Main Page: In section FOOTER_MIDDLE click FIND_A_hybris_CENTER_LINK
+	  	Then Find hybris Center Page: USE_MY_LOCATION_BUTTON is visible
+	  	And Webshop Main Page: Click hybris_LOGO_BUTTON
 	
 		And General: Wait 1 second
 		And General: Scroll to the bottom
@@ -76,9 +76,9 @@ Feature: HOL-19855 Contact Us
 	    And General: Wait 1 second
 	    Then Webshop Main Page: Section SEND_US_A_MESSAGE_OFF_CANVAS is visible
 	    
-	    And Webshop Main Page: In section CONTACT_US_OFF_CANVAS click FIND_A_HILTI_CENTER_LINK
-	  	Then Find Hilti Center Page: USE_MY_LOCATION_BUTTON is visible
-	  	And Webshop Main Page: Click HILTI_LOGO_BUTTON
+	    And Webshop Main Page: In section CONTACT_US_OFF_CANVAS click FIND_A_hybris_CENTER_LINK
+	  	Then Find hybris Center Page: USE_MY_LOCATION_BUTTON is visible
+	  	And Webshop Main Page: Click hybris_LOGO_BUTTON
 	  	
 	  	When Webshop Main Page: In section HEADER click LOG_IN_OR_REGISTER_BUTTON
 	  	And Webshop Main Page: In section LOG_IN_OR_REGISTER click CONTACT_US_BUTTON
@@ -98,8 +98,8 @@ Feature: HOL-19855 Contact Us
 	    And General: Wait 1 second
 	    Then Webshop Main Page: Section SEND_US_A_MESSAGE_OFF_CANVAS is visible
 	    
-	    And Webshop Main Page: In section CONTACT_US_OFF_CANVAS click FIND_A_HILTI_CENTER_LINK
-	  	Then Find Hilti Center Page: USE_MY_LOCATION_BUTTON is visible
+	    And Webshop Main Page: In section CONTACT_US_OFF_CANVAS click FIND_A_hybris_CENTER_LINK
+	  	Then Find hybris Center Page: USE_MY_LOCATION_BUTTON is visible
 	  	
 	Examples:
 		|	Chat_Open_Hour			|	Chat_Close_Hour			|

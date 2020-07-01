@@ -46,7 +46,7 @@ Feature: HOL-19863 Call back layer
 	    Then Webshop Main Page: Section CONTACT_US is visible
 	    
 	    When Webshop Main Page: If test is executed between <Call_Back_Open_Hour> and <Call_Back_Close_Hour> section LET_US_CALL_YOU_BACK is visible otherwise it contains text contact.callMeBackSection.label.unavailable
-	    And Webshop Main Page: If call back is open then in section LET_US_CALL_YOU_BACK in field YOUR_NAME_CALLBACK_TEXTFIELD type in Hilti Customer
+	    And Webshop Main Page: If call back is open then in section LET_US_CALL_YOU_BACK in field YOUR_NAME_CALLBACK_TEXTFIELD type in hybris Customer
 	    And Webshop Main Page: If call back is open then in section LET_US_CALL_YOU_BACK in field YOUR_PHONE_NUMBER_TEXTFIELD type in 0123456789
 	   
 	    When Webshop Main Page: If call back is open then in section CONTACT_US click SUBMIT_CALLBACK_BUTTON
@@ -72,7 +72,7 @@ Feature: HOL-19863 Call back layer
 	    When Webshop Main Page: If test is executed between <Call_Back_Open_Hour> and <Call_Back_Close_Hour> section LET_US_CALL_YOU_BACK is visible otherwise it contains text contact.callMeBackSection.label.unavailable
 	    
 	    #Empty field
-	    And Webshop Main Page: If call back is open then in section LET_US_CALL_YOU_BACK in field YOUR_NAME_CALLBACK_TEXTFIELD type in Hilti Customer	   
+	    And Webshop Main Page: If call back is open then in section LET_US_CALL_YOU_BACK in field YOUR_NAME_CALLBACK_TEXTFIELD type in hybris Customer
 	    And Webshop Main Page: If call back is open then in section CONTACT_US click SUBMIT_CALLBACK_BUTTON	    
 	    And General: Wait 2 seconds
 	   	Then Webshop Main Page: If call back is open then section CONTACT_US contains text common.message.error.required
@@ -99,7 +99,7 @@ Feature: HOL-19863 Call back layer
 	    And General: Wait 2 seconds
 	    And Webshop Main Page: If call back is open then in section LET_US_CALL_YOU_BACK attribute maxlength of field YOUR_PHONE_NUMBER_TEXTFIELD contains value 18
 	  	
-	    And Webshop Main Page: If call back is open then in section LET_US_CALL_YOU_BACK in field YOUR_NAME_CALLBACK_TEXTFIELD type in Hilti Customer
+	    And Webshop Main Page: If call back is open then in section LET_US_CALL_YOU_BACK in field YOUR_NAME_CALLBACK_TEXTFIELD type in hybris Customer
 	   	And Webshop Main Page: If call back is open then in section LET_US_CALL_YOU_BACK in field YOUR_PHONE_NUMBER_TEXTFIELD type in 012345678910111213  
 	    And Webshop Main Page: If call back is open then in section CONTACT_US click SUBMIT_CALLBACK_BUTTON	    
 	   	Then Webshop Main Page: If call back is open then section CONTACT_US contains text contact.callMeBackSection.label.successHeadlineLabel

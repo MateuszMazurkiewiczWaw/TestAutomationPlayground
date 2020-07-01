@@ -14,7 +14,7 @@ Feature: HOL-20080 Forgotten Password Overlay / Sent email error
   		#1. Close Forgot password section by clicking "X" button
      	Then Webshop Main Page: In section LOG_IN_OR_REGISTER click FORGOTTEN_PASSWORD_BUTTON
      	Then Webshop Main Page: Section FORGOTTEN_PASSWORD is visible
-     	When Webshop Main Page: In section FORGOTTEN_PASSWORD in field FORGOTTEN_PASSWORD_EMAIL_ADDRESS_TEXTFIELD type in this.mail.does.not.exist@hiltishop.com
+     	When Webshop Main Page: In section FORGOTTEN_PASSWORD in field FORGOTTEN_PASSWORD_EMAIL_ADDRESS_TEXTFIELD type in this.mail.does.not.exist@hybrisshop.com
      	Then Webshop Main Page: Click FORGOTTEN_PASSWORD_CLOSE_BUTTON
      	And General: Wait 1 second
     	Then Webshop Main Page: Section FORGOTTEN_PASSWORD is not visible
@@ -32,13 +32,13 @@ Feature: HOL-20080 Forgotten Password Overlay / Sent email error
 	    When Webshop Main Page: In section HEADER click LOG_IN_OR_REGISTER_BUTTON
 	    And Webshop Main Page: Section LOG_IN_OR_REGISTER is visible
 	    Then Webshop Main Page: In section LOG_IN_OR_REGISTER click FORGOTTEN_PASSWORD_BUTTON
-	    When Webshop Main Page: In section FORGOTTEN_PASSWORD in field FORGOTTEN_PASSWORD_EMAIL_ADDRESS_TEXTFIELD type in this.mail.does.not.exist@hiltishop.com
+	    When Webshop Main Page: In section FORGOTTEN_PASSWORD in field FORGOTTEN_PASSWORD_EMAIL_ADDRESS_TEXTFIELD type in this.mail.does.not.exist@hybrisshop.com
 	    Then General: Lose focus
 	    Then Webshop Main Page: In section FORGOTTEN_PASSWORD element FORGOTTEN_PASSWORD_CONTINUE_BUTTON is enabled
 	    Then Webshop Main Page: In section FORGOTTEN_PASSWORD click FORGOTTEN_PASSWORD_CONTINUE_BUTTON
 	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR is visible
 	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR contains text common.login.forgotPassword.message.error.title
-	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR contains text this.mail.does.not.exist@hiltishop.com
+	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR contains text this.mail.does.not.exist@hybrisshop.com
 	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR contains element GO_TO_REGISTRATION_LINK
 	    
 	    And Webshop Main Page: In section FORGOTTEN_PASSWORD_ERROR open GO_TO_REGISTRATION_LINK in new tab

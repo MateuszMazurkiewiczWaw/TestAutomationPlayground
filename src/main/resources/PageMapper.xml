@@ -2,7 +2,7 @@
 
 <pages>
 
-    <package id="com.hilti.tahilti.pages.WebshopPages">
+    <package id="com.hybris.mati.pages.WebshopPages">
          <page>
             <name>Webshop Main Page</name>
             <class>WebshopMainPage</class>
@@ -64,16 +64,16 @@
        		<class>CheckoutPickupLocationPage</class>
        	</page>
        	<page>
-       		<name>Find Hilti Center Page</name>
-       		<class>FindHiltiCenterPage</class>
+       		<name>Find hybris Center Page</name>
+       		<class>FindhybrisCenterPage</class>
        	</page>
        	<page>
        		<name>Profile Page</name>
        		<class>ProfilePage</class>
        	</page>
        	<page>
-       		<name>Hilti Center Details Page</name>
-       		<class>HiltiCenterDetailsPage</class>
+       		<name>hybris Center Details Page</name>
+       		<class>hybrisCenterDetailsPage</class>
        	</page>
        	<page>
        		<name>Checkout Summary Print Page</name>

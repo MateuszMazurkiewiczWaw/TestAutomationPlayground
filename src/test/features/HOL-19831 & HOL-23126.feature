@@ -31,11 +31,11 @@ Feature: HOL-19831 & HOL-23126 Framework - Header & Footer and Marketing Bubble
 		#Different countries buttons needed (to be automated as soon as the feature will be avaliable)
 		When Webshop Main Page: Element LANGUAGE_BUTTON contains text EN
 		
-		#Click on HILTI logo
+		#Click on hybris logo
 		When Webshop Main Page: In section HEADER click LOG_IN_OR_REGISTER_BUTTON
 	    Then Webshop Main Page: Section LOG_IN_OR_REGISTER is visible
-	    And Webshop Main Page: HILTI_LOGO_BUTTON is visible
-		And Webshop Main Page: Click HILTI_LOGO_BUTTON
+	    And Webshop Main Page: hybris_LOGO_BUTTON is visible
+		And Webshop Main Page: Click hybris_LOGO_BUTTON
 		Then Webshop Main Page: Section LOG_IN_OR_REGISTER is not visible
 		
 		#Click on Hamburger icon
@@ -56,7 +56,7 @@ Feature: HOL-19831 & HOL-23126 Framework - Header & Footer and Marketing Bubble
 		And Webshop Main Page: Section NAVIGATION_MENU is not visible
 
 		And Webshop Main Page: Section FOOTER_BOTTOM is visible
-		And Webshop Main Page: Section FOOTER_BOTTOM contains text common.label.follow.hilti
+		And Webshop Main Page: Section FOOTER_BOTTOM contains text common.label.follow.hybris
 		
 	Scenario: Checking Marketing Bubble's reaction on cookie accept
 		#HOL-27075 - verification

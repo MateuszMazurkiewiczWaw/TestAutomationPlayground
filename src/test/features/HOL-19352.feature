@@ -48,19 +48,19 @@ Feature: HOL-19352 Order History - Details
 		And General: Wait 1 second
 		
 		#Checking order details content:
-		When Order Details Page: Section HILTI_ORDER_NUMBER contains remembered value ORDER_NUMBER1
-		Then Order Details Page: Section HILTI_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderDate
-		And Order Details Page: Section HILTI_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderFulfilmentStatus
-		And Order Details Page: Section HILTI_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderShippingStatus
-		And Order Details Page: Section HILTI_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderTotal
+		When Order Details Page: Section hybris_ORDER_NUMBER contains remembered value ORDER_NUMBER1
+		Then Order Details Page: Section hybris_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderDate
+		And Order Details Page: Section hybris_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderFulfilmentStatus
+		And Order Details Page: Section hybris_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderShippingStatus
+		And Order Details Page: Section hybris_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderTotal
 		
 		#After discussion with Robert G. we agreed to not check order total price due to tax differences /5.09.2016
-		#And Order Details Page: Section HILTI_ORDER_NUMBER contains remembered value ORDER_TOTAL1
+		#And Order Details Page: Section hybris_ORDER_NUMBER contains remembered value ORDER_TOTAL1
 		
-		And Order Details Page: Section HILTI_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderPoNumber
-		And Order Details Page: Section HILTI_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderPurchaser
-		And Order Details Page: In section HILTI_ORDER_NUMBER element TRACK_SHIPMENT_BUTTON is enabled
-		And Order Details Page: In section HILTI_ORDER_NUMBER element REQUEST_INVOICE_BUTTON is enabled
+		And Order Details Page: Section hybris_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderPoNumber
+		And Order Details Page: Section hybris_ORDER_NUMBER contains text account.orderHistoryDetails.label.orderPurchaser
+		And Order Details Page: In section hybris_ORDER_NUMBER element TRACK_SHIPMENT_BUTTON is enabled
+		And Order Details Page: In section hybris_ORDER_NUMBER element REQUEST_INVOICE_BUTTON is enabled
 		When Order Details Page: Click REQUEST_INVOICE_BUTTON
 		Then General: Wait 1 second
 		
@@ -68,11 +68,11 @@ Feature: HOL-19352 Order History - Details
 		And Order Details Page: MESSAGE_BOX is visible
 		
 		And Order Details Page: BACK_TO_ORDER_HISTORY_LINK is visible
-		And Order Details Page: Section HILTI_ORDER_NUMBER contains text account.orderHistoryDetails.label.numberOfShipments
+		And Order Details Page: Section hybris_ORDER_NUMBER contains text account.orderHistoryDetails.label.numberOfShipments
 		And General: Scroll to the top
 		And General: Wait 1 second
-		And Order Details Page: In section HILTI_ORDER_NUMBER element ORDER_DETAILS_DELIVERY_ADDRESS_LINK is visible
-		When Order Details Page: In section HILTI_ORDER_NUMBER click ORDER_DETAILS_DELIVERY_ADDRESS_LINK
+		And Order Details Page: In section hybris_ORDER_NUMBER element ORDER_DETAILS_DELIVERY_ADDRESS_LINK is visible
+		When Order Details Page: In section hybris_ORDER_NUMBER click ORDER_DETAILS_DELIVERY_ADDRESS_LINK
 		Then Order Details Page: Section ORDER_DETAILS_ADDRESS_POPUP is visible
 		And Order Details Page: Section ORDER_DETAILS_ADDRESS_POPUP contains text account.orderHistoryDetails.label.deliveryAddressDetails
 		And Order Details Page: In section ORDER_DETAILS_ADDRESS_POPUP click ORDER_DETAILS_ADDRESS_CLOSE_BUTTON

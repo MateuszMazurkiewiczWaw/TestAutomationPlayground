@@ -32,13 +32,13 @@ Feature: HOL-20064 Forgotten Password Overlay
 	    And Webshop Main Page: In section FORGOTTEN_PASSWORD element FORGOTTEN_PASSWORD_CONTINUE_BUTTON is enabled
 	    Then General: Lose focus
 	    #3-Type in not existing e-mail address, and cancel the password recovery section
-	    When Webshop Main Page: In section FORGOTTEN_PASSWORD in field FORGOTTEN_PASSWORD_EMAIL_ADDRESS_TEXTFIELD type in this.mail.does.not.exist@hiltishop.com
+	    When Webshop Main Page: In section FORGOTTEN_PASSWORD in field FORGOTTEN_PASSWORD_EMAIL_ADDRESS_TEXTFIELD type in this.mail.does.not.exist@hybrisshop.com
 	    Then General: Lose focus
 	    Then Webshop Main Page: In section FORGOTTEN_PASSWORD element FORGOTTEN_PASSWORD_CONTINUE_BUTTON is enabled
 	    Then Webshop Main Page: In section FORGOTTEN_PASSWORD click FORGOTTEN_PASSWORD_CONTINUE_BUTTON
 	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR is visible
 	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR contains text common.login.forgotPassword.message.error.title
-	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR contains text this.mail.does.not.exist@hiltishop.com
+	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR contains text this.mail.does.not.exist@hybrisshop.com
 	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR contains element GO_TO_REGISTRATION_LINK
 	    And Webshop Main Page: Section FORGOTTEN_PASSWORD_ERROR contains element CONTACT_US_BUTTON
 		Then Webshop Main Page: In section FORGOTTEN_PASSWORD click FORGOTTEN_PASSWORD_CANCEL_BUTTON

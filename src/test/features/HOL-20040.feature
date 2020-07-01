@@ -64,7 +64,7 @@ Feature: HOL-20040 Login layer - Registration/Login
 	    And Webshop Main Page: PASSWORD_ERROR_MESSAGE is visible
 	    
 	    When Webshop Main Page: In section LOG_IN_OR_REGISTER in field EMAIL_ADDRESS_TEXTFIELD type in RANDOM_EMAIL_ADDRESS	  
-	    And  Webshop Main Page: In section LOG_IN_OR_REGISTER in field PASSWORD_TEXTFIELD type in Hilti2016!
+	    And  Webshop Main Page: In section LOG_IN_OR_REGISTER in field PASSWORD_TEXTFIELD type in hybris2016!
 	    And General: Lose focus
 	    And Webshop Main Page: In section LOG_IN_OR_REGISTER click LOG_IN_BUTTON	    	  
 	    Then Webshop Main Page: Section WRONG_PASSWORD_ERRORBOX is visible

@@ -117,7 +117,7 @@ Feature: HOL-19580 and HOL-19589 and HOL-19597 Click & Collect Check out - Order
 		And Checkout Order Confirmation Page: Element SUCCESS_MESSAGE_BOX contains text checkout.orderConfirmation.message.success.HeadlineTitle
 		Then Checkout Order Confirmation Page: ALERT_MESSAGE_BOX is visible
 		And Checkout Order Confirmation Page: Element ALERT_MESSAGE_BOX contains text checkout.orderConfirmation.message.warn.clickAndCollectHeadlineTitle
-		And Checkout Order Confirmation Page: HILTI_CENTER_COLUMN is visible
+		And Checkout Order Confirmation Page: hybris_CENTER_COLUMN is visible
 		And Checkout Order Confirmation Page: OPENING_HOURS_COLUMN is visible
 		And Checkout Order Confirmation Page: EXPECTED_PICKUP_CONTACT_COLUMN is visible
 		And Checkout Order Confirmation Page: GET_DIRECTIONS_BUTTON is visible
@@ -154,7 +154,7 @@ Feature: HOL-19580 and HOL-19589 and HOL-19597 Click & Collect Check out - Order
 		Then Checkout Order Confirmation Page: Element SUCCESS_MESSAGE_BOX contains text checkout.orderConfirmation.message.success.HeadlineTitle
 		And Checkout Order Confirmation Page: ALERT_MESSAGE_BOX is visible
 		And Checkout Order Confirmation Page: Element ALERT_MESSAGE_BOX contains text checkout.orderConfirmation.message.warn.clickAndCollectHeadlineTitle
-		And Checkout Order Confirmation Page: HILTI_CENTER_COLUMN is visible
+		And Checkout Order Confirmation Page: hybris_CENTER_COLUMN is visible
 		And Checkout Order Confirmation Page: OPENING_HOURS_COLUMN is visible
 		And Checkout Order Confirmation Page: EXPECTED_PICKUP_CONTACT_COLUMN is visible
 		And Checkout Order Confirmation Page: GET_DIRECTIONS_BUTTON is visible
@@ -167,11 +167,11 @@ Feature: HOL-19580 and HOL-19589 and HOL-19597 Click & Collect Check out - Order
 		And General: Wait 2 second
 		And Checkout Pickup Location Page: In section CLICK_AND_COLLECT element ERROR_MESSAGE_BOX contains text checkout.pickupLocation.message.error.noProductsReadyHeadline
 		And General: Wait 2 second
-	 	And Checkout Pickup Location Page: Click CHANGE_HILTI_CENTER_BUTTON
-	 	And Checkout Pickup Location Page: In section CHANGE_HILTI_CENTER_POPUP in field ENTER_ZIP_CODE_OR_CITY_TEXTFIELD type in Kansas City
+	 	And Checkout Pickup Location Page: Click CHANGE_hybris_CENTER_BUTTON
+	 	And Checkout Pickup Location Page: In section CHANGE_hybris_CENTER_POPUP in field ENTER_ZIP_CODE_OR_CITY_TEXTFIELD type in Kansas City
 	 	And Checkout Pickup Location Page: Click SEARCH_LOCATION_BUTTON
 	 	And General: Wait 5 seconds
-	 	And Checkout Pickup Location Page: Click HILTI_CENTER_SELECT_BUTTON
+	 	And Checkout Pickup Location Page: Click hybris_CENTER_SELECT_BUTTON
 	 	And General: Wait 3 seconds
 	 	And Checkout Pickup Location Page: Click CONTINUE_BUTTON
 	 	And General: Wait 1 second
@@ -251,10 +251,10 @@ Feature: HOL-19580 and HOL-19589 and HOL-19597 Click & Collect Check out - Order
 	 	And Cart Page: Click CLICK_AND_COLLECT_CHECKBOX
 	 	And Cart Page: In section SHOPPING_CART_HEADER click CHECK_OUT_BUTTON
 		And General: Wait 3 seconds
-	 	And Checkout Pickup Location Page: Click CHANGE_HILTI_CENTER_BUTTON
-	 	And Checkout Pickup Location Page: In section CHANGE_HILTI_CENTER_POPUP in field ENTER_ZIP_CODE_OR_CITY_TEXTFIELD type in Anchorage
+	 	And Checkout Pickup Location Page: Click CHANGE_hybris_CENTER_BUTTON
+	 	And Checkout Pickup Location Page: In section CHANGE_hybris_CENTER_POPUP in field ENTER_ZIP_CODE_OR_CITY_TEXTFIELD type in Anchorage
 	 	And Checkout Pickup Location Page: Click SEARCH_LOCATION_BUTTON
-	 	And Checkout Pickup Location Page: Click HILTI_CENTER_SELECT_BUTTON
+	 	And Checkout Pickup Location Page: Click hybris_CENTER_SELECT_BUTTON
 	 	And General: Wait 3 seconds
 	 	And Checkout Pickup Location Page: Click CONTINUE_BUTTON
 	 	And General: Wait 1 second
@@ -275,7 +275,7 @@ Feature: HOL-19580 and HOL-19589 and HOL-19597 Click & Collect Check out - Order
 		Then Checkout Order Confirmation Page: GO_TO_HOMEPAGE_LINK is visible
 		And Checkout Order Confirmation Page: INNOVATION_MAGAZIN_MARKETING_CONTAINER is visible
 		And Checkout Order Confirmation Page: NEW_PRODUCTS_CONTAINER is visible
-		And Checkout Order Confirmation Page: HILTI_CENTER_COLUMN is visible
+		And Checkout Order Confirmation Page: hybris_CENTER_COLUMN is visible
 		And Checkout Order Confirmation Page: OPENING_HOURS_COLUMN is visible
 		And Checkout Order Confirmation Page: EXPECTED_PICKUP_CONTACT_COLUMN is visible
 		And Checkout Order Confirmation Page: GET_DIRECTIONS_BUTTON is visible

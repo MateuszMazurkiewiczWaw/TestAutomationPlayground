@@ -64,8 +64,8 @@ Feature: HOL-20545 Standard Check out: Delivery information
 		And General: Wait 1 second
 		Then Checkout Delivery Page: CHANGE_DELIVERY_ADDRESS_POPUP is not visible
 		
-		#Click Ship to a Hilti Center button
-		Then Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM click SHIP_TO_A_HILTI_CENTER_RADIOBUTTON
+		#Click Ship to a hybris Center button
+		Then Checkout Delivery Page: In section DELIVERY_ADDRESS_FORM click SHIP_TO_A_hybris_CENTER_RADIOBUTTON
 		And Checkout Delivery Page: STORELOCATOR_POPUP is visible
 		And Checkout Delivery Page: Element STORELOCATOR_POPUP contains text storelocator.label.title
 		And Checkout Delivery Page: Close STORELOCATOR_POPUP
